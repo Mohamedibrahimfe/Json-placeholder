@@ -8,9 +8,86 @@
     scroll-behavior: smooth;
 }
 body{
+    background: #f0f0f0;
+}
+.container{
+    position: relative;
+    width: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: space-around;
+}
+#names{
+    width: 550px;
+    background-color: rgb(91, 0, 91);
+    min-height: 100vh;
+}
+ul{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
-    background: #f0f0f0;
+}
+ul li{
+    background-color: white;
+    width: 400px;
+    padding:5px;
+    border-radius: 22px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+ul li.selected{
+    border: 4px solid orangered;
+    box-shadow: 0 0 10px rgb(255, 138, 95);
+}
+ul li a{
+    font-size:19px;
+    color: black;
+    margin-left: 15px;
+    font-weight: bold;
+}
+#subTitle{
+    color: black;
+    margin-left: 15px;
+    font-weight: 500;
+    color: gray;
+}
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 25px solid rgb(91, 0, 91);
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.post{
+    background-color: white;
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px gray;
+}
+.post:last-child{
+    margin-bottom: 20px;
+}
+.post-title{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+}
+.post-body{ 
+    text-align: left;
+    color: gray;
+    margin: 10px 0;
 }
