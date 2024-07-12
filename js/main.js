@@ -50,11 +50,11 @@ function getId(id) {
     getAllPosts(id)
     selectUser(id)
 }
-// function selectUser(id) {
-//     let users = document.querySelectorAll('#names li');
-//     for(user of users) {
-//         user.classList.remove('selected');
-//     }
-//     document.getElementById(id).classList.toggle('selected');
+function selectUser(id) {
+    let users = document.querySelectorAll('#names li');
+    for(user of users) {
+        user.classList.remove('selected');
+    }
+    document.getElementById(id).classList.toggle('selected');
 
-// }
+}
