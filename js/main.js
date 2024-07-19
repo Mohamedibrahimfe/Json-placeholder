@@ -23,7 +23,7 @@ function getAllPosts(id) {
         }
     }
 }
-getAllPosts();
+getAllPosts(1);
 function getAllUsers() {
     let request=new XMLHttpRequest();
     request.open('GET',"https://jsonplaceholder.typicode.com/users");
