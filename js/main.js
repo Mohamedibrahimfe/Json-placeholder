@@ -1,3 +1,4 @@
+getAllPosts(1);
 function getAllPosts(id) {
     let request=new XMLHttpRequest();
     request.open('GET',"https://jsonplaceholder.typicode.com/posts?userId="+id);
@@ -23,7 +24,7 @@ function getAllPosts(id) {
         }
     }
 }
-getAllPosts(1);
+
 function getAllUsers() {
     let request=new XMLHttpRequest();
     request.open('GET',"https://jsonplaceholder.typicode.com/users");
